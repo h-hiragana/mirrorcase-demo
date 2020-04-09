@@ -1,12 +1,12 @@
 <linker>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.GameObject" preserve="all" />
-    <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Camera" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.MeshRenderer" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
@@ -18,51 +18,30 @@
     <type fullname="UnityEngine.LightProbes" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
   </assembly>
-  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="Framework.View.BaseView" preserve="all" />
-    <type fullname="Kannavi.View.SpotListView" preserve="all" />
-    <type fullname="Kannavi.View.NameListCell" preserve="all" />
-    <type fullname="Framework.View.ScrollRect" preserve="all" />
-    <type fullname="Kannavi.View.NameListView" preserve="all" />
-    <type fullname="Kannavi.View.SpotListCell" preserve="all" />
-    <type fullname="Kannavi.View.GameJoystick" preserve="all" />
-    <type fullname="Kannavi.View.NameListAdapter" preserve="all" />
-    <type fullname="Framework.View.SwitchButton" preserve="all" />
-    <type fullname="Kannavi.View.MainView" preserve="all" />
-    <type fullname="Kannavi.View.UserPin" preserve="all" />
-    <type fullname="Kannavi.View.SpotListAdapter" preserve="all" />
-    <type fullname="Kannavi.View.MapView" preserve="all" />
-    <type fullname="Kannavi.View.MapImage" preserve="all" />
-    <type fullname="Framework.View.TableView" preserve="all" />
-    <type fullname="Kannavi.Controller.MainController" preserve="all" />
-    <type fullname="Kannavi.Controller.SpotListController" preserve="all" />
-    <type fullname="Kannavi.Model.GameCamera" preserve="all" />
-    <type fullname="Kannavi.Model.Signboard" preserve="all" />
-    <type fullname="Framework.Controller.NavigationController" preserve="all" />
-    <type fullname="Kannavi.Model.Properties" preserve="all" />
-    <type fullname="Kannavi.Model.User" preserve="all" />
-    <type fullname="Kannavi.Model.Spot" preserve="all" />
-  </assembly>
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.UI.Text" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
-    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
-    <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
-    <type fullname="UnityEngine.UI.Mask" preserve="all" />
     <type fullname="UnityEngine.UI.Shadow" preserve="all" />
-    <type fullname="UnityEngine.UI.Button" preserve="all" />
-    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
-    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
     <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
     <type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all" />
   </assembly>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Kannavi.View.GameJoystick" preserve="all" />
+    <type fullname="Kannavi.View.DemoView" preserve="all" />
+    <type fullname="Framework.View.BaseView" preserve="all" />
+    <type fullname="Kannavi.Model.GameCamera" preserve="all" />
+    <type fullname="Kannavi.Model.Signboard" preserve="all" />
+    <type fullname="Framework.Controller.NavigationController" preserve="all" />
+    <type fullname="Kannavi.Model.User" preserve="all" />
+    <type fullname="Kannavi.Model.Spot" preserve="all" />
+    <type fullname="Kannavi.Controller.DemoController" preserve="all" />
+    <type fullname="Kannavi.Model.DemoProperties" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEditor.MonoScript" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.Font" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
