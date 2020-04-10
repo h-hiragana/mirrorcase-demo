@@ -13,24 +13,6 @@ window.onload = function() {
       }
     }
   });
-
-  // AR Modal
-  $("#uniry-canvas").children(".background-button").on("click", function () {
-    // Current ID
-    unityInstance.SendMessage('Controllers', 'GetCurrentId');
-  });
-
-  // Prev Button
-  $(".prev-button").on("click", function () {
-    $("#uniry-canvas").children(".loading-content").fadeIn(0.2 * 1000);
-    unityInstance.SendMessage('Controllers', 'OnPrevButtonClick');
-  });
-
-  // Next Button
-  $(".next-button").on("click", function () {
-    $("#uniry-canvas").children(".loading-content").fadeIn(0.2 * 1000);
-    unityInstance.SendMessage('Controllers', 'OnNextButtonClick');
-  });
 };
 
 /*
