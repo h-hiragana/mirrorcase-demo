@@ -4,32 +4,103 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
   <title>バーチャル展示会 | デモ</title>
 
-  <link rel="shortcut icon" href="TemplateData/favicon.ico">
-  <link rel="stylesheet" href="TemplateData/style.css">
-  <script src="TemplateData/UnityProgress.js"></script>
+  <!-- Unity -->
   <script src="Build/UnityLoader.js"></script>
 
-  <script>
-      UnityLoader.SystemInfo.mobile = false;
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/demo.json",
-      {
-        onProgress: UnityProgress,
-        Module: {
-          TOTAL_STACK: 6 * 1024 * 1024,
-          cacheControl: {"default": "immutable"}
-        }
-      });
-    </script>
+  <!-- JQuer, Icon -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Animation -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@yuta_r_and_d" />
+  <meta property="og:url" content="https://www.mirrorcase.net/" />
+  <meta property="og:title" content="ちょっと未来な3Dビューア | MIRROR CASE" />
+  <meta property="og:description" content="画像や動画を使う感覚で、サイトに3Dを組み込み可能。写真から3Dモデルを製作する新技術と、簡単に編集から公開まで行えるエディタで、お手軽＆低コストで導入できます。" />
+  <meta property="og:image" content="https://www.mirrorcase.net/twitter.png" />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
 
 </head>
 
 <body>
+  <!-- ヘッダー -->
+  <div class="text-center text-secondary mt-3">サイトに埋め込める３Dビューア</div>
+  <h1 class="text-center text-secondary mt-3">バーチャル展示会</h1>
 
+  <!-- 説明 -->
+  <div class="my-3 p-3">
+    <div class="p-3 bg-light">
+      <div class="w-100 mt-3 px-3">
+        <h3 class="text-dark font-weight-bold text-center">3Dビューアについて</h3>
+        <div class="mt-4">
+          画像や動画を使う感覚で、サイトに3Dを導入できる仕組みを開発してます。<br>
+          写真からCGを製作する新技術と、簡単に編集から公開まで行えるエディタで、お手軽＆低コストで導入できます。<br>
+
+          このエディタはまだまだ開発途中であり、<span class="text-danger font-weight-bold">突然データを消去</span>する可能性がございます。
+          あくまでご確認用でございますので、どうかご了承ください。正式版をお待ちいただけますと幸いでございます。<br>
+          また、エディタは<span class="text-danger font-weight-bold">スマホではなくPCで</span>ご利用ください。
+        </div>
+
+        <a class="mt-3 d-block font-weight-bold" href="https://www.mirrorcase.net/" target="_blank">詳しく見る</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="unity-content">
+    <div id="unity"></div>
+    <div id="uniry-canvas">
+      <!-- Progress Bar -->
+      <div class="progress-content">
+        <div class="progress">
+          <div id="unity-progress-bar" class="progress-bar bg-info" role="progressbar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ar-modal-1" class="ar-modal">
+    <a rel="ar" href="img/1/3d.usdz">
+      <img class="modal-image shadow" src="img/1/img.png">
+    </a>
+  </div>
+
+  <div id="ar-modal-2" class="ar-modal">
+    <a rel="ar" href="img/2/3d.usdz">
+      <img class="modal-image shadow" src="img/2/img.png">
+    </a>
+  </div>
+
+  <div id="ar-modal-3" class="ar-modal">
+    <a rel="ar" href="img/3/3d.usdz">
+      <img class="modal-image shadow" src="img/3/img.png">
+    </a>
+  </div>
+
+  <!--
   <div class="subtitle">サイトに埋め込める展示会</div>
   <div class="heading">バーチャル展示会</div>
   <div class="description">
+    サイトに埋め込める3Dマップです。<br>
+
+
+
+    アプリや長いロードなしで
+    3Dは開発コストが高く限られた場面でしか使わない技術ですが、<br>
+
     迷いがちな商業施設でお客様を最適なご案内するためのツールです。<br>
     3Dで構築した仮想館内で道案内 / 検索 / おすすめ など様々なおもてなしが可能です。<br>
     しかも、アプリ不要でホームページに埋め込むことができるので導入がとても簡単です。<br></div>
@@ -49,7 +120,7 @@
   <div class="subtitle">サイトに埋め込める展示会</div>
   <div class="heading">バーチャル展示会<br><br></div>
 
-  <div id="page_top"><a href="#">⬆︎</a></div>
+  <div id="page_top"><a href="#">⬆︎</a></div> -->
 </body>
 
 </html>
