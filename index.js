@@ -39,7 +39,8 @@ OnSpotClick
 
 function onSpotClick(id) {
   // Open
-  openARLink("ar-modal-" + id);
+  // openARLink("ar-modal-" + id);
+  openARLink("ar-modal-1");
 }
 
 /*

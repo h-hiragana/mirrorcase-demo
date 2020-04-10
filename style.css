@@ -12,7 +12,13 @@ body {
   position: relative;
   width: 100%;
   height: 80vh;
-  /* overflow: hidden; */
+}
+
+@media screen and (min-width: 768px) {
+  .unity-content {
+    width: 50vw;
+    height: 70vh;
+  }
 }
 
 #unity {
@@ -62,6 +68,16 @@ WebGL Canvas - Progress
 @media screen and (min-width: 768px) {
   #uniry-canvas .progress  {
     height: 30px;
+  }
+}
+
+/*
+Footer
+*/
+
+@media screen and (min-width: 768px) {
+  .footer  {
+    margin-top: 36px;
   }
 }
 

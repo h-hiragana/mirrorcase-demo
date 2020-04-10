@@ -34,11 +34,11 @@
     <type fullname="Framework.View.BaseView" preserve="all" />
     <type fullname="Kannavi.Model.GameCamera" preserve="all" />
     <type fullname="Kannavi.Model.Signboard" preserve="all" />
+    <type fullname="Kannavi.Model.DemoProperties" preserve="all" />
     <type fullname="Framework.Controller.NavigationController" preserve="all" />
+    <type fullname="Kannavi.Controller.DemoController" preserve="all" />
     <type fullname="Kannavi.Model.User" preserve="all" />
     <type fullname="Kannavi.Model.Spot" preserve="all" />
-    <type fullname="Kannavi.Controller.DemoController" preserve="all" />
-    <type fullname="Kannavi.Model.DemoProperties" preserve="all" />
   </assembly>
   <assembly fullname="UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEditor.MonoScript" preserve="all" />

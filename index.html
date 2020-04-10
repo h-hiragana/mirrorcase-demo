@@ -23,6 +23,9 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
+  <!-- Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@yuta_r_and_d" />
@@ -38,14 +41,14 @@
 
 <body>
   <!-- ヘッダー -->
-  <div class="text-center text-secondary mt-3">サイトに埋め込める３Dビューア</div>
-  <h1 class="text-center text-secondary mt-3">バーチャル展示会</h1>
+  <div class="text-center text-secondary mt-3">サイトに埋め込む3Dビューア</div>
+  <h1 class="text-center text-secondary mt-3"><span class="text-info">V</span>-EVENT</h1>
 
   <!-- 説明 -->
   <div class="my-3 p-3">
     <div class="p-3 bg-light">
       <div class="w-100 mt-3 px-3">
-        <h3 class="text-dark font-weight-bold text-center">3Dビューアについて</h3>
+        <h3 class="text-dark font-weight-bold text-center">V-EVENTについて</h3>
         <div class="mt-4">
           画像や動画を使う感覚で、サイトに3Dを導入できる仕組みを開発してます。<br>
           写真からCGを製作する新技術と、簡単に編集から公開まで行えるエディタで、お手軽＆低コストで導入できます。<br>
@@ -60,7 +63,8 @@
     </div>
   </div>
 
-  <div class="unity-content">
+  <!-- 3Dビューア -->
+  <div class="unity-content m-auto shadow">
     <div id="unity"></div>
     <div id="uniry-canvas">
       <!-- Progress Bar -->
@@ -72,55 +76,27 @@
     </div>
   </div>
 
+  <!-- フッター -->
+  <div class="py-5 bg-light footer">
+    <div class="text-center text-secondary mt-3">サイトに埋め込める３Dビューア</div>
+    <h1 class="text-center text-secondary mt-3"><span class="text-info">V</span>-EVENT</h1>
+  </div>
+
+  <!-- ARモーダル -->
   <div id="ar-modal-1" class="ar-modal">
-    <a rel="ar" href="img/1/3d.usdz">
-      <img class="modal-image shadow" src="img/1/img.png">
-    </a>
+    <model-viewer ar
+    class="w-100 h-100"
+    alt="Trabant bakelite car"
+    src="img/car/3d.glb"
+    ios-src="img/car/3d.usdz"
+    background-color="#70BCD1"
+    shadow-intensity="0.7"
+    camera-controls
+    interaction-prompt="auto"
+    auto-rotate ar magic-leap>
+    </model-viewer>
   </div>
 
-  <div id="ar-modal-2" class="ar-modal">
-    <a rel="ar" href="img/2/3d.usdz">
-      <img class="modal-image shadow" src="img/2/img.png">
-    </a>
-  </div>
-
-  <div id="ar-modal-3" class="ar-modal">
-    <a rel="ar" href="img/3/3d.usdz">
-      <img class="modal-image shadow" src="img/3/img.png">
-    </a>
-  </div>
-
-  <!--
-  <div class="subtitle">サイトに埋め込める展示会</div>
-  <div class="heading">バーチャル展示会</div>
-  <div class="description">
-    サイトに埋め込める3Dマップです。<br>
-
-
-
-    アプリや長いロードなしで
-    3Dは開発コストが高く限られた場面でしか使わない技術ですが、<br>
-
-    迷いがちな商業施設でお客様を最適なご案内するためのツールです。<br>
-    3Dで構築した仮想館内で道案内 / 検索 / おすすめ など様々なおもてなしが可能です。<br>
-    しかも、アプリ不要でホームページに埋め込むことができるので導入がとても簡単です。<br></div>
-  <div class="subtitle">館内MAP以外の魅力的な使い方</div>
-  <div class="description">
-    ◆お客様の検索ワード解析<br>
-    お客様が検索したデータを解析し（何のワードが？どのお店が？どのような人が？）マーケティングに役立てる事が可能です。<br><br>
-    ◆検索履歴からニーズにあった店鋪提案<br>
-    お客様の検索履歴を元にニーズにあった店鋪を表示します。また必要な人に必要な情報を届けることができます。<br><br>
-    ◆外部のホームページやアプリとの連携<br>
-    既に商業施設様でお持ちのホームページや公式アプリにこの機能を組み込めます。</div>
-
-  <div class="webgl-content">
-    <div id="unityContainer"></div>
-  </div>
-
-  <div class="subtitle">サイトに埋め込める展示会</div>
-  <div class="heading">バーチャル展示会<br><br></div>
-
-  <div id="page_top"><a href="#">⬆︎</a></div> -->
 </body>
 
 </html>
