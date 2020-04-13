@@ -29,7 +29,7 @@
     <type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all" />
   </assembly>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="Kannavi.View.GameJoystick" preserve="all" />
+    <type fullname="Kannavi.View.FixedGameJoystick" preserve="all" />
     <type fullname="Kannavi.View.DemoView" preserve="all" />
     <type fullname="Framework.View.BaseView" preserve="all" />
     <type fullname="Kannavi.Model.GameCamera" preserve="all" />
@@ -49,7 +49,8 @@
     <type fullname="UnityEngine.Canvas" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
